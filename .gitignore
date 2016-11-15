@@ -5,6 +5,6 @@ jsnes.tmproj
 ._*
 .DS_Store
 /tmp
-/node_modules
 fceux
 js/analytics.js
+node_modules

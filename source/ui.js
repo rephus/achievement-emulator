@@ -16,6 +16,8 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
+var canvas;
+
 JSNES.DummyUI = function(nes) {
     this.nes = nes;
     this.enable = function() {};
@@ -100,7 +102,7 @@ if (typeof jQuery !== 'undefined') {
                  * Create UI
                  */
                 self.root = $('<div class="root"></div>');
-                self.screen = $('<canvas class="nes-screen" width="256" height="240"></canvas>').appendTo($("#emulator"));
+                self.screen = $('<canvas id="canvas" class="nes-screen" width="256" height="240"></canvas>').appendTo($("#emulator"));
 
                 setWindowSize = function(){
                 windowHeight = $(window).height();
@@ -393,6 +395,10 @@ if (typeof jQuery !== 'undefined') {
                     }
 
                     this.canvasContext.putImageData(this.canvasImageData, 0, 0);
+
+                    //Locate this method in websocket
+                    drawMultiplayer(this.canvasContext);
+
                 }
             };
 

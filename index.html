@@ -123,7 +123,9 @@
                         </div>
 
                     </div>
-
+                    <div class='col-md-12 text-center'>
+                      <label>Introduce your name: <input type='text' id='multiplayer-name' maxlength="10" style='width:100px' value='Mario'/></label>
+                    </div>
                 </div>
 
                 <div class="clearfix"> </div>
@@ -157,6 +159,14 @@
                 <h2> How does Retrophies work ? </h2> Achievements are triggered by looking at specific parts of the game's memory in real time, until they match certain conditions. If you are familiar with cheat cartidges, like Game Genie, there's a lot of overlap in how both work. In the same way as cheat codes, In a similar way of how cheat cartridges work, like Game Genie. An effective but complex process, as all the achievements need to be reverse engineered by looking at the memory, one by one.
             </div>
 
+
+            <div class="col-md-8 padding-20">
+                <h2> Play with friends </h2> Welcome to the future of retro MMO games, Retrophies support multiplayer game visualization on single player games via Websockets. Every person connected to the game will appear as a Mario sticker. Follow your friends and see their actions.
+            </div>
+
+            <div class="col-md-4 center-image">
+                <img class='img-responsive' src='images/multiplayer-small.png' />
+            </div>
             <div class="clearfix"> </div>
         </div>
     </div>
@@ -172,10 +182,7 @@
             </ul>
             <div class="col-md-12 padding-20 text-center">
                 <img class='tweet-button ' src='images/tweet-button.png' />
-
             </div>
-
-
         </div>
     </div>
 
@@ -199,6 +206,9 @@
            </a>. Retrophies is a fork of
                 <a target='_blank' href='https://github.com/bfirsh/jsnes/'>JSNES</a>
 
+                <div class="col-md-12 padding-20">
+                  Support our work on <a href='https://www.patreon.com/coconauts'><img src='images/patreon.png'/> <a>
+                </div>
                 <div class="col-md-12">
                     Do you want to know more ? Check more details about this project
                     <a target='_blank' href="http://coconauts.net/projects/retrophies">
@@ -218,6 +228,7 @@
             <script src="source/ppu.js" type="text/javascript" charset="utf-8"></script>
             <script src="source/rom.js" type="text/javascript" charset="utf-8"></script>
             <script src="source/achievements.js" type="text/javascript" charset="utf-8"></script>
+            <script src="source/websockets.js" type="text/javascript" charset="utf-8"></script>
 
             <script src="source/ui.js" type="text/javascript" charset="utf-8"></script>
             <script type="text/javascript" charset="utf-8">
